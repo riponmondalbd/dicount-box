@@ -10,14 +10,21 @@
 
 <body class="bg-sky-300">
     <section class="w-3/4 mx-auto p-8 text-center space-y-4">
-        <h1 class="text-2xl md:text-6xl font-semibold">Welcome To Discount Calculator</h1>
-        <h4 class="text-2xl font-semibold">Price: <input class="rounded-lg md:w-auto w-5/6" type="text" name="" id="">
+        <h1 class="text-2xl md:text-3xl lg:text-6xl font-semibold">Welcome To Discount Calculator</h1>
+        <h4 class="text-2xl font-semibold">Price: <input class="px-2 rounded-lg md:w-auto w-5/6" type="text" name=""
+                id="price-field">
         </h4>
-        <h4 class="text-2xl font-semibold">Discount: <input class="rounded-lg md:w-auto w-5/6" type="text" name=""
-                id=""></h4>
-        <button class="bg-gray-500 hover:bg-gray-600 text-white font-bold text-2xl py-4 px-10 rounded-lg">Apply</button>
-        <h1 class="text-3xl font-semibold">Pay: <span></span></h1>
+        <h4 class="text-2xl font-semibold">Discount: <input class="px-2 rounded-lg md:w-auto w-5/6" type="text" name=""
+                id="discount-field"></h4>
+        <button id="btn-apply"
+            class="bg-gray-500 hover:bg-gray-600 text-white font-bold text-2xl py-4 px-10 rounded-lg">Apply</button>
+        <h1 class="text-3xl font-semibold">Pay: <span id="pay-amount" class="text-green-800 font-bold"></span></h1>
+        <h1 class="text-3xl font-semibold">You Safe: <span id="safe-amount" class="text-purple-700 font-bold"></span>
+        </h1>
     </section>
+
+    <!-- add scripts -->
+    <script src="js/discountCalculator.js"></script>
 </body>
 
 </html>
